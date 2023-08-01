@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designs</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            font-family: 'REM', sans-serif;
+            margin: 0;
+        }
+        .nav{
+            width:100%;
+            height:100px;
+            background-color: #475e5e;
+           
+        }
+        
+        .menu{
+            position:relative;
+            top:-50px;
+            display:flex;
+            flex-direction:row;
+            list-style-type: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu li{
+            list-style-type: none;
+            margin:20px;
+            color:white;
+        }
+
+        .navitems{
+            text-decoration: none;
+            color:white;
+        }
+        
+        .navitems:hover{
+            text-decoration: underline;
+            color:blanchedalmond;
+        }
+        .logo{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+            position:relative;
+            left:25px;
+            vertical-align: middle;
+            top:25px;
+        }
+
+        .about-us{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: -40;
+            color:white
+        }
+        .signuppage{
+            display: flex;
+            height:800px;
+            background-image: url("./background.png");
+            background-color: rgb(0,0,0,0.3);
+            background-repeat: no-repeat;
+            object-fit: contain;
+            background-size:cover;
+            width:100%;
+            justify-content: center;
+        }
+
+        .form{
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            height:800px;
+            background-color: rgb(0,0,0,0.3);
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .sign{
+            margin:30px;
+            display:flex;
+            flex-direction: column;
+            width:500px;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color:white;
+        }
+        .form input{
+            width: 200px;
+        }
+
+        .input{
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+        .username{
+            margin:5px;
+            height:30px;
+        }
+        .password{
+            height:30px;
+            margin:5px;
+        }
+
+        .btn{
+            width: 100px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-color:#1414c1;
+            color:white;
+            height:40px;
+        }
+
+        .btn:hover{
+            background-color:#4c4ce9
+        }
+
+        .features{
+            justify-content: center;
+            text-align: center;
+            margin:20px;
+        }
+        .features-imgs{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .img-items img{
+            width:300px;
+            margin:20px
+        }
+    </style>
+</head>
+<body>
+    <div class="nav" display:"flex" flex-direction:"row">
+        <img src="logo.png" class="logo">
+        <ul class="menu">
+            <a href="#" class="navitems"><li>Colors</li></a>
+            <a href="#" class="navitems"><li>Services</li></a>
+            <a href="#" class="navitems"><li>Shops</li></a>
+            <a href="#" class="navitems"><li>Reviews</li></a>
+            <input type="search" placeholder="search">
+            <button class="go">Go</button>
+        </ul>
+    </div>
+
+
+    <div class="signuppage">
+        <form class="form">
+
+            <div class="about-us">
+                <h3 style="font-size:60px;margin-top: 0;">About Us</h3>
+                <p> An attractive yet simple gallery can do wonders </p>
+            </div>
+
+            <div class="sign">
+                <h3>Sign-up Page</h3>
+                <label class="username">Username</label>
+                <input class="username input" placeholder="type your username here" >
+                <label class="password">Password</label>
+                <input type="password" class="password input" placeholder="type your password here" >
+                <br>
+                <div class="buttons">
+
+                    <button class="btn">Sign-in</button> 
+                    <button class="btn">Log-in</button> 
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="features">
+        <div class="heading"><h1>Our Features</h1></div>
+        <div class="features-imgs">
+            <div class="img1 img-items"><img src="bed.jpg"><h2>beds</h2></div>
+            <div class="img1 img-items"><img src="lamp.jpg"><h2>lamps</h2></div>
+            <div class="img1 img-items"><img src="kitchen.jpg"><h2>kitchen</h2></div>
+            <div class="img1 img-items"><img src="chairs.jpg"><h2>chairs</h2></div>
+        </div>
+    </div>
+
+    
+    <!-- design a webpage using html tags -->
+    <!-- website was created using html tags -->
+</body>
+</html>
+
